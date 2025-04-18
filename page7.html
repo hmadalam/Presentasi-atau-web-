@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #222;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #f9c74f;
+    }
+
+    .content {
+      padding: 40px 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .profile-img {
+      max-width: 200px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      animation: fadeInImage 1.5s forwards;
+    }
+
+    .about-text {
+      font-size: 18px;
+      color: #a0c4ff;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInText 1.5s forwards;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #f9c74f;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeInButton 2s forwards;
+    }
+
+    .btn:hover {
+      background-color: #ffd166;
+      box-shadow: 0 0 15px #f9c74f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInImage {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInButton {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <section class="content">
+    <img src="/49526b064f202754ca36df381b1f828d.jpg" alt="Foto Profil" class="profile-img">
+    <p class="about-text">
+      Halo! Aku Alam.
+Aku seorang pelajar yang suka banget sama dunia teknologi dan hal-hal kreatif—khususnya game development dan desain digital.
+Belajar hal baru, terutama soal programming, desain, dan sains, itu udah jadi hobi.
+Waktu luangku biasanya diisi dengan nonton video edukasi, baca buku seru, dan tentu aja… nonton anime!
+Yup, aku juga penikmat anime garis miring rebahan yang tetap pengen terus berkembang dan belajar hal-hal keren.
+
+    </p>
+  </section>
+</body>
+</html>
